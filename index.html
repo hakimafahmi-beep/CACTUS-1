@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cactus Score - Avant d'acheter, verifiez</title>
+  <meta name="description" content="Cactus centralise les avis, videos, articles, alternatives et liens d'achat pour aider a choisir avant d'acheter." />
+  <style>
+    :root { --blue:#112d96; --ink:#15172d; --muted:#6e7284; --line:#e8eaf2; --cream:#fbfaf7; --orange:#ce5f36; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--cream); }
+    header { height:76px; display:flex; align-items:center; justify-content:space-between; padding:0 5vw; background:rgba(255,255,255,.88); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; backdrop-filter: blur(12px); }
+    .brand { font-family: Georgia, serif; color:var(--blue); font-size:28px; letter-spacing:.02em; }
+    nav { display:flex; gap:28px; align-items:center; color:#33384f; font-size:14px; }
+    nav a { color:inherit; text-decoration:none; }
+    .pill { background:var(--blue); color:white; border-radius:999px; padding:12px 18px; font-weight:700; }
+    .hero { min-height:72vh; display:grid; place-items:center; text-align:center; padding:64px 20px 44px; background: radial-gradient(circle at 50% 30%, rgba(39,87,210,.28), transparent 34%), linear-gradient(180deg,#f9fbff 0%,#fbfaf7 76%); overflow:hidden; }
+    .hero:before { content:""; position:absolute; inset:80px 0 auto; height:420px; background:linear-gradient(135deg, rgba(20,50,160,.95), rgba(61,126,232,.35), rgba(255,255,255,0)); clip-path: ellipse(45% 34% at 50% 50%); opacity:.35; pointer-events:none; }
+    .hero-inner { position:relative; width:min(920px,100%); }
+    .logo-mark { width:120px; height:120px; margin:0 auto 18px; border-radius:36px; background:linear-gradient(135deg,#061a82,#0b58e8); box-shadow:0 24px 60px rgba(17,45,150,.22); display:grid; place-items:center; color:white; font-family:Georgia,serif; font-size:56px; }
+    h1 { margin:0; font-family: Georgia, "Times New Roman", serif; font-size:clamp(48px,8vw,94px); line-height:.95; color:var(--blue); font-weight:500; }
+    .lead { max-width:660px; margin:22px auto 28px; font-size:clamp(18px,2vw,22px); color:#34384d; line-height:1.55; }
+    .search { width:min(760px,100%); margin:0 auto; display:flex; padding:8px; background:white; border:1px solid #dfe3f2; border-radius:999px; box-shadow:0 18px 45px rgba(24,34,80,.11); }
+    .search input { flex:1; min-width:0; border:0; outline:0; padding:0 20px; font-size:16px; background:transparent; }
+    .search button { border:0; border-radius:999px; background:var(--blue); color:white; padding:15px 23px; font-weight:800; }
+    .sub { margin-top:14px; color:var(--blue); font-weight:700; font-size:14px; }
+    main { padding:70px 5vw; }
+    .section { width:min(1120px,100%); margin:0 auto 72px; }
+    .eyebrow { text-transform:uppercase; color:var(--blue); letter-spacing:.14em; font-size:12px; font-weight:800; }
+    h2 { font-family:Georgia,serif; font-weight:500; font-size:clamp(34px,5vw,64px); color:var(--blue); margin:10px 0 16px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    .card { background:white; border:1px solid var(--line); border-radius:18px; padding:24px; box-shadow:0 14px 38px rgba(17,25,61,.06); }
+    .score { width:76px; height:76px; border-radius:20px; background:var(--blue); color:white; display:grid; place-items:center; font-family:Georgia,serif; font-size:28px; margin-bottom:18px; }
+    .card h3 { margin:0 0 8px; font-family:Georgia,serif; font-size:25px; font-weight:500; }
+    .card p { color:var(--muted); line-height:1.55; margin:0; }
+    .tabs { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:24px; }
+    .tab { border:1px solid #d9ddea; background:#fff; border-radius:999px; padding:14px 16px; text-align:center; font-weight:800; color:#2d3146; }
+    .tab.active { background:var(--orange); color:white; border-color:var(--orange); }
+    footer { border-top:1px solid var(--line); padding:34px 5vw; color:var(--muted); display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media (max-width:820px) { nav { gap:14px; font-size:13px; } .grid { grid-template-columns:1fr; } .tabs { grid-template-columns:1fr 1fr; } .search { border-radius:26px; align-items:stretch; } .search button { padding:14px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">CACTUS</div>
+    <nav>
+      <a href="#recherche">Recherche</a>
+      <a href="#magazine">Cactus Magazine</a>
+      <a href="#score">Score</a>
+      <span class="pill">S'inscrire</span>
+    </nav>
+  </header>
+  <section class="hero" id="recherche">
+    <div class="hero-inner">
+      <div class="logo-mark">C</div>
+      <h1>Avant d'acheter,<br>verifiez.</h1>
+      <p class="lead">Cactus centralise les avis, videos, articles, alternatives et liens d'achat pour vous aider a faire un choix clair, transparent et justifie.</p>
+      <form class="search"><input placeholder="Rechercher un produit..." /><button type="button">Rechercher</button></form>
+      <div class="sub">Des milliers d'avis, videos et analyses pour vous aider a choisir.</div>
+    </div>
+  </section>
+  <main>
+    <section class="section" id="score">
+      <div class="eyebrow">Plateforme Cactus Score</div>
+      <h2>Une base professionnelle pour decider avant achat.</h2>
+      <div class="grid">
+        <article class="card"><div class="score">8.4</div><h3>Cactus Score</h3><p>Un score explique par criteres : avis utilisateurs, qualite percue, popularite, prix, sources externes et durabilite.</p></article>
+        <article class="card"><div class="score">4</div><h3>Onglets produit</h3><p>Detail, ils en parlent, avis utilisateurs et acheter : le parcours reste simple et proche de l'application de reference.</p></article>
+        <article class="card"><div class="score">AI</div><h3>Architecture evolutive</h3><p>La base est preparee pour Supabase, moderation, back-office, liens affilies, commercants locaux et agents IA.</p></article>
+      </div>
+      <div class="tabs"><div class="tab active">Detail</div><div class="tab">Ils en parlent</div><div class="tab">Avis</div><div class="tab">Acheter</div></div>
+    </section>
+    <section class="section" id="magazine">
+      <div class="eyebrow">Cactus Magazine</div>
+      <h2>Comparatifs, tendances et analyses produits.</h2>
+      <div class="grid">
+        <article class="card"><h3>Top produits</h3><p>Selection editoriale et produits populaires par categorie.</p></article>
+        <article class="card"><h3>Sources externes</h3><p>Videos TikTok, YouTube, Instagram, presse, blogs et createurs.</p></article>
+        <article class="card"><h3>Achat local</h3><p>Preparation des offres affiliees, boutiques locales et demandes commercants.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><strong>CACTUS</strong><span>cactus-score.com - plateforme d'aide a la decision d'achat</span></footer>
+</body>
+</html>
