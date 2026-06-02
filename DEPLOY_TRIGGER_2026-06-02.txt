@@ -1,0 +1,3 @@
+Cactus Score deployment refresh
+Date: 2026-06-02
+Reason: force Vercel to rebuild from the repository root containing package.json.
