@@ -1,3 +1,4 @@
 Lili — Ah ! Les crocodiles
+Nouvelle version Full HD, 1920×1080, 30 images/seconde, 2 minutes.
 
-Voix synthétique : modèle Siwis medium de Piper (Rhasspy), issu du corpus SIWIS (https://datashare.is.ed.ac.uk/handle/10283/2353), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Voix transformée pour chant par alignement phonétique et WORLD. Comptine traditionnelle ; animation et accompagnement originaux.
+Voix synthétique : modèle Siwis medium de Piper (Rhasspy), issu du corpus SIWIS (https://datashare.is.ed.ac.uk/handle/10283/2353), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Voix transformée pour chant avec TD-PSOLA (Praat/Parselmouth). Comptine traditionnelle « Ah ! Les crocodiles ». Animation et décors originaux ; personnage de Lili adapté de la référence fournie.
