@@ -1,0 +1,3 @@
+Lili — Ah ! Les crocodiles
+
+Voix synthétique : modèle Siwis medium de Piper (Rhasspy), issu du corpus SIWIS (https://datashare.is.ed.ac.uk/handle/10283/2353), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Voix transformée pour chant par alignement phonétique et WORLD. Comptine traditionnelle ; animation et accompagnement originaux.
